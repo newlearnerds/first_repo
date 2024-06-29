@@ -12,4 +12,8 @@ def max_recur(s):
         s = s[0:i]
         print('2nd check true:',s)
         return max_recur(s)
+    
+## to test 
+a = max_recur([4,5,2,-1])
+print('maximum number :', a)    
 
