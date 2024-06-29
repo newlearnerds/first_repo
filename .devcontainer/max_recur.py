@@ -16,5 +16,5 @@ def max_recur(s):
 a = max_recur([2,5,1,6,3])
 print(a)   
 
-b = max_recur([-1,0,-3])
+b = max_recur([-1,0,-3,-4])
 print(b)
