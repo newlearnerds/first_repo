@@ -1,3 +1,6 @@
+###  Write a short recursive Python function that finds the maximum
+###  values in a sequence without using any loops.
+
 def max_recur(s):
     n = len(s)
     if n == 1:
@@ -12,7 +15,7 @@ def max_recur(s):
         s = s[0:i]
         print('2nd check true:',s)
         return max_recur(s)
-    
+# To test the maximum recursion function    
 a = max_recur([2,5,1,6,3])
 print(a)   
 
