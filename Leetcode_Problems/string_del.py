@@ -18,6 +18,6 @@ def string_del(s):
     return c      
 
 ## test:
-s = 'abcabca'
+s = 'ababca'
 test1 = string_del(s) 
 print(test1) 
