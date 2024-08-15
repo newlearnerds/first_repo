@@ -43,6 +43,7 @@ def reverse_linked_list(original_ll):
     reversed_ll.head = prev_node
     return reversed_ll    
 
+print('Test 1:')
 ll = LinkedList()
 ll.append(2)
 ll.append(4)
@@ -50,4 +51,4 @@ ll.append(6)
 ll.append(8)
 print('original linked list :',ll.output_list())
 a = reverse_linked_list(ll.output_list())
-print('reversed linked list :',a.output_list())   
+print('reversed linked list :',a.output_list())
