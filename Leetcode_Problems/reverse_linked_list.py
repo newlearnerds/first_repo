@@ -43,7 +43,7 @@ def reverse_linked_list(original_ll):
     reversed_ll.head = prev_node
     return reversed_ll    
 
-print('Test 1:')
+print('Test_1 To Reverse a Linked List ')
 ll = LinkedList()
 ll.append(2)
 ll.append(4)
