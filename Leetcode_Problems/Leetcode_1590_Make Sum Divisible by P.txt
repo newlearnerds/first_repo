@@ -1,0 +1,36 @@
+def make_divisible(nums,p):
+    ## # If the total sum is already divisible by p, no subarray needs to be removed
+          
+    tot_sum = sum(nums)
+    rem = tot_sum % p
+    if rem == 0:
+        return 0
+    ## # Initialize min_len to the size of the array
+    min_len = len(nums)
+   
+    # Try removing every possible subarray
+                   
+    for i in range(len(nums)):
+        sub_sum = 0
+        for j in range(i,len(nums)):
+            # Calculate the subarray sum
+            sub_sum += nums[j]
+            print('sub array sum:',sub_sum)
+            
+            # Check if removing this subarray makes the remaining sum divisible by p
+            rem_sum = (tot_sum-sub_sum)%p 
+            print('remaining sum:', rem_sum)
+            
+            # Update the smallest subarray length
+
+            if rem_sum == 0:
+                min_len = min(min_len,j-i+1)
+            print('minimum length:',min_len)   
+            print()
+    
+    # If no valid subarray is found, return -1
+    if min_len != len(nums):
+        return min_len
+    else:
+        return -1
+              
